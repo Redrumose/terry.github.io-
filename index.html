@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terry TOUITOU — Portfolio BTS SIO SLAM</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
-    <span class="logo">Terry TOUITOU</span>
-    <ul>
+    <span class="nav-logo">Terry TOUITOU</span>
+    <ul class="nav-links">
       <li><a href="#competences">Compétences</a></li>
       <li><a href="#projets">Projets</a></li>
       <li><a href="#e5">Épreuve E5</a></li>
@@ -20,150 +20,270 @@
     </ul>
   </nav>
 
-  <!-- Présentation -->
-  <section id="accueil">
-    <h1>Terry TOUITOU</h1>
-    <p class="sous-titre">Étudiant BTS SIO option SLAM — 2ème année</p>
-    <p>
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Terry <span>TOUITOU</span></h1>
+    <p class="hero-sub">Étudiant BTS SIO option SLAM — 2ème année</p>
+    <p class="hero-desc">
       Ce portfolio présente mes compétences, mes projets réalisés et mon parcours en entreprise
-      dans le cadre de l'épreuve E5 (Support et mise à disposition de services informatiques — Volet A).
+      dans le cadre de l'épreuve E5 — Support et mise à disposition de services informatiques (Volet A).
     </p>
-  </section>
+  </div>
 
-  <!-- Compétences -->
-  <section id="competences">
-    <h2>Compétences</h2>
-    <div class="tags">
-      <span class="tag">HTML5</span>
-      <span class="tag">CSS3</span>
-      <span class="tag">PHP</span>
-      <span class="tag">MySQL</span>
-      <span class="tag">XAMPP</span>
-      <span class="tag">JavaScript</span>
-      <span class="tag">phpMyAdmin</span>
-      <span class="tag">Git</span>
-      <span class="tag">VS Code</span>
-      <span class="tag">SQL</span>
-    </div>
-  </section>
+  <!-- Contenu -->
+  <div class="container">
 
-  <!-- Projets -->
-  <section id="projets">
-    <h2>Projets réalisés</h2>
+    <!-- Compétences -->
+    <div class="section" id="competences">
+      <p class="section-title">01 — Compétences</p>
+      <h2>Stack technique</h2>
 
-    <div class="projet">
-      <h3>QuizMaster — Application de quiz</h3>
-      <p>
-        Application web de quiz interactif. Les questions sont stockées dans une base de données MySQL
-        et tirées aléatoirement à chaque partie. L'interface affiche la question, les choix de réponse
-        et le score en fin de partie. Le projet est hébergé en local via XAMPP.
-      </p>
-      <p class="projet-tech">Technologies : HTML · CSS · PHP · MySQL · XAMPP</p>
-    </div>
-
-    <div class="projet">
-      <h3>ChatRoom — Messagerie commune</h3>
-      <p>
-        Application de chat partagé entre utilisateurs inscrits. Chaque message s'affiche avec le pseudo
-        de l'expéditeur dans une boîte de dialogue commune. Les utilisateurs se connectent avec leur
-        compte pour accéder au fil de discussion.
-      </p>
-      <p class="projet-tech">Technologies : HTML · CSS · PHP · MySQL · XAMPP</p>
-    </div>
-  </section>
-
-  <!-- Épreuve E5 -->
-  <section id="e5">
-    <h2>Épreuve E5 — Volet A</h2>
-    <p class="sous-titre">Support et mise à disposition de services informatiques</p>
-
-    <p><strong>Entreprise :</strong> [Nom de l'entreprise] — [Dates du stage / alternance]</p>
-    <br>
-
-    <h3>Situations professionnelles</h3>
-    <div>
-      <div class="situation">
-        <span class="sit-num">S1</span>
-        <div>
-          <strong>Développement de l'application Quiz</strong>
-          <p class="sit-desc">Conception et développement d'un quiz web avec tirage aléatoire de questions depuis une BDD MySQL via PHP et XAMPP.</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>🌐 Front-end</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">Grid</span>
+          </div>
         </div>
-      </div>
-
-      <div class="situation">
-        <span class="sit-num">S2</span>
-        <div>
-          <strong>Développement du chat communautaire</strong>
-          <p class="sit-desc">Création d'une messagerie partagée avec gestion des comptes utilisateurs, affichage du pseudo et des messages.</p>
+        <div class="skill-card">
+          <h3>⚙️ Back-end</h3>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">JavaScript</span>
+          </div>
         </div>
-      </div>
-
-      <div class="situation">
-        <span class="sit-num">S3</span>
-        <div>
-          <strong>Installation et configuration de XAMPP</strong>
-          <p class="sit-desc">Mise en place d'un serveur local Apache/MySQL pour héberger et tester les applications web développées.</p>
+        <div class="skill-card">
+          <h3>🗄️ Base de données</h3>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">SQL</span>
+            <span class="tag">phpMyAdmin</span>
+          </div>
         </div>
-      </div>
-
-      <div class="situation">
-        <span class="sit-num">S4</span>
-        <div>
-          <strong>Conception des bases de données</strong>
-          <p class="sit-desc">Modélisation et création des tables MySQL pour les deux projets (questions/réponses, utilisateurs/messages) via phpMyAdmin.</p>
-        </div>
-      </div>
-
-      <div class="situation">
-        <span class="sit-num">S5</span>
-        <div>
-          <strong>Tests et documentation technique</strong>
-          <p class="sit-desc">Rédaction de la documentation, tests fonctionnels et support utilisateur des applications développées.</p>
+        <div class="skill-card">
+          <h3>🔧 Outils</h3>
+          <div class="tags">
+            <span class="tag">XAMPP</span>
+            <span class="tag">Git</span>
+            <span class="tag">VS Code</span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- À propos -->
-  <section id="about">
-    <h2>À propos</h2>
-    <table class="info-table">
-      <tr>
-        <td>Nom</td>
-        <td>Terry TOUITOU</td>
-      </tr>
-      <tr>
-        <td>Formation</td>
-        <td>BTS SIO option SLAM — 2ème année</td>
-      </tr>
-      <tr>
-        <td>Établissement</td>
-        <td>[Nom de l'établissement]</td>
-      </tr>
-      <tr>
-        <td>Localisation</td>
-        <td>Paris, France</td>
-      </tr>
-      <tr>
-        <td>Disponibilité</td>
-        <td>À partir de juillet 2026</td>
-      </tr>
-      <tr>
-        <td>Langues</td>
-        <td>Français, Anglais</td>
-      </tr>
-    </table>
-  </section>
+    <!-- Projets -->
+    <div class="section" id="projets">
+      <p class="section-title">02 — Réalisations</p>
+      <h2>Projets développés</h2>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li>📧 <a href="mailto:terry.touitou@email.com">terry.touitou@email.com</a></li>
-      <li>💼 <a href="https://linkedin.com/in/terry-touitou" target="_blank">LinkedIn</a></li>
-      <li>🐙 <a href="https://github.com/terrytouitou" target="_blank">GitHub</a></li>
-    </ul>
-  </section>
+      <div class="projects-grid">
+
+        <!-- Quiz -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">❓</span>
+            <div>
+              <h3>QuizMaster</h3>
+              <p class="project-type">Application Web — Quiz interactif</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <p>
+              Application de quiz avec questions tirées aléatoirement depuis une base de données MySQL.
+              L'interface affiche la question, les choix de réponse et le score final.
+              Hébergé en local via XAMPP.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">XAMPP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">💬</span>
+            <div>
+              <h3>ChatRoom</h3>
+              <p class="project-type">Application Web — Messagerie commune</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <p>
+              Messagerie partagée entre utilisateurs inscrits. Chaque message s'affiche avec
+              le pseudo de l'expéditeur dans une boîte commune. Connexion avec compte utilisateur.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">XAMPP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Épreuve E5 -->
+    <div class="section" id="e5">
+      <p class="section-title">03 — Épreuve E5 BTS SIO</p>
+      <h2>Support & mise à disposition de services informatiques</h2>
+
+      <div class="e5-grid">
+
+        <!-- Entreprise -->
+        <div class="e5-card">
+          <h3>Expérience en entreprise <span class="badge">Volet A</span></h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <p class="tl-date">2024 – 2026</p>
+              <p class="tl-title">[Nom de l'entreprise]</p>
+              <p class="tl-desc">Développement web, support utilisateur et maintenance applicative.</p>
+            </div>
+            <div class="tl-item">
+              <p class="tl-date">Stage — 2024</p>
+              <p class="tl-title">[Nom de l'entreprise]</p>
+              <p class="tl-desc">Participation aux projets de l'équipe informatique.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="e5-card">
+          <h3>Synthèse</h3>
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Situations professionnelles</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Ans de formation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Situations professionnelles -->
+        <div class="e5-card full">
+          <h3>Situations professionnelles significatives</h3>
+          <div>
+
+            <div class="situation">
+              <div class="sit-num">S1</div>
+              <div>
+                <span class="sit-title">Développement de l'application Quiz</span>
+                <span class="sit-desc">HTML · CSS · PHP · MySQL — Quiz interactif avec tirage aléatoire de questions depuis une BDD via XAMPP.</span>
+              </div>
+            </div>
+
+            <div class="situation">
+              <div class="sit-num">S2</div>
+              <div>
+                <span class="sit-title">Développement du chat communautaire</span>
+                <span class="sit-desc">HTML · CSS · PHP · MySQL — Messagerie partagée avec gestion des comptes utilisateurs et affichage des messages.</span>
+              </div>
+            </div>
+
+            <div class="situation">
+              <div class="sit-num">S3</div>
+              <div>
+                <span class="sit-title">Installation et configuration de XAMPP</span>
+                <span class="sit-desc">Apache · MySQL · phpMyAdmin — Mise en place du serveur local de développement pour héberger les applications.</span>
+              </div>
+            </div>
+
+            <div class="situation">
+              <div class="sit-num">S4</div>
+              <div>
+                <span class="sit-title">Conception des bases de données</span>
+                <span class="sit-desc">SQL · phpMyAdmin — Modélisation et création des tables pour les deux projets (questions/réponses, utilisateurs/messages).</span>
+              </div>
+            </div>
+
+            <div class="situation">
+              <div class="sit-num">S5</div>
+              <div>
+                <span class="sit-title">Tests et documentation technique</span>
+                <span class="sit-desc">Rédaction de la documentation, tests fonctionnels et support utilisateur des applications développées.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- À propos -->
+    <div class="section" id="about">
+      <p class="section-title">04 — À propos</p>
+      <h2>Qui suis-je ?</h2>
+
+      <div class="about-grid">
+        <div class="avatar">TT</div>
+        <div class="about-text">
+          <h3>Terry TOUITOU</h3>
+          <p class="about-role">Étudiant BTS SIO SLAM · Développeur junior</p>
+          <p>
+            Passionné par le développement web, je maîtrise HTML, CSS, PHP et MySQL
+            à travers des projets concrets réalisés en formation et en entreprise.
+          </p>
+          <table class="info-table">
+            <tr><td>Formation</td><td>BTS SIO option SLAM</td></tr>
+            <tr><td>Établissement</td><td>[Nom de l'établissement]</td></tr>
+            <tr><td>Localisation</td><td>Paris, France</td></tr>
+            <tr><td>Disponibilité</td><td>Juillet 2026</td></tr>
+            <tr><td>Langues</td><td>Français, Anglais</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <p class="section-title">05 — Contact</p>
+      <h2>Me contacter</h2>
+
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:terry.touitou@email.com" class="contact-link">
+            <span class="contact-icon">✉️</span>
+            terry.touitou@email.com
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/terry-touitou" target="_blank" class="contact-link">
+            <span class="contact-icon">💼</span>
+            LinkedIn — Terry TOUITOU
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/terrytouitou" target="_blank" class="contact-link">
+            <span class="contact-icon">🐙</span>
+            GitHub — terrytouitou
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -172,4 +292,4 @@
 
 </body>
 </html>
-</html>
+
