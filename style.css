@@ -1,136 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-size: 62.5%;
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: rgb(22, 19, 24);
-    color: white;
+/* --- Navigation --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  padding-bottom: 12px;
+  margin-bottom: 48px;
 }
 
-header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+nav .logo {
+  font-weight: bold;
+  font-size: 1.05rem;
 }
 
-.logo{
-    font-size: 3rem;
-    color: rgb(169, 144, 3);
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.logo:hover{
-    transform: scale(1.1);
+nav a {
+  color: #222;
+  text-decoration: none;
+  font-size: 0.88rem;
 }
 
-nav a{
-    font-size: 1.8rem;
-    color: white;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+nav a:hover {
+  text-decoration: underline;
 }
 
-nav a:hover,
-nav a.active{
-    color: rgb(169, 144, 3);
-    border-bottom: 3px solid rgb(169, 144, 3);
+/* --- Sections --- */
+section {
+  margin-bottom: 56px;
 }
 
-
-section{
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 6px;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    background-color: rgb(22, 19, 24);
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
 }
 
-.home .home-content h1{
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1.3;
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 
-span{
-    color: rgb(169, 144, 3);
+p {
+  color: #444;
+  margin-bottom: 8px;
 }
 
-.home-content h3{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
+.sous-titre {
+  color: #666;
+  font-size: 0.92rem;
+  margin-bottom: 16px;
 }
 
-.home-img{
-    border-radius: 50%;
+/* --- Compétences --- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.home-img img{
-    position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid rgb(169, 144, 3);
-    cursor: pointer;
-    transition: 0.2s linear;
+.tag {
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
 }
 
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+/* --- Projets --- */
+.projet {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 14px;
 }
 
-.btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background-color: rgb(22, 19, 24);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: rgb(169, 144, 3);
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid rgb(169, 144, 3);
-    transition: 0.3s ease;
-    cursor: pointer;
-    margin-top: 2rem;
+.projet-tech {
+  font-size: 0.82rem;
+  color: #777;
+  margin-top: 8px;
 }
 
-.btn:hover{
-    transform: scale3d(1.3);
-    background-color: rgb(169, 144, 3);
-    color: rgb(22, 19, 24);
-    box-shadow: 0 0 25px rgb(169, 144, 3);
+/* --- Situations E5 --- */
+.situation {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
 }
+
+.situation:last-child {
+  border-bottom: none;
+}
+
+.sit-num {
+  font-weight: bold;
+  color: #999;
+  font-size: 0.85rem;
+  min-width: 22px;
+  padding-top: 2px;
+}
+
+.sit-desc {
+  font-size: 0.82rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* --- À propos --- */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.info-table td {
+  padding: 5px 0;
+  vertical-align: top;
+}
+
+.info-table td:first-child {
+  font-weight: bold;
+  width: 150px;
+  color: #444;
+}
+
+/* --- Contact --- */
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.92rem;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list a {
+  color: #222;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+  border-top: 1px solid #ddd;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #aaa;
+}
+
+/* --- Responsive --- */
+@media (max-width: 560px) {
+  nav ul   { display: none; }
+  h1       { font-size: 1.5rem; }
+}
+
 
