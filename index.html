@@ -1,34 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Acceuil Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terry TOUITOU — Portfolio BTS SIO SLAM</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header>
-    <a href="a" class="logo">Terry</a>
 
-    <nav>
-        <a href="a" class="active">Home</a>
-        <a href="a">Services</a>
-        <a href="a">Skills</a>
-        <a href="a">Education</a>
-        <a href="a">Experience</a>
-        <a href="a">Contact</a>
-    </nav>
-</header>
-<section class="home">
-    <div class="home-img">
-        <img src="Oisis.png" alt="">
+  <!-- Navigation -->
+  <nav>
+    <span class="logo">Terry TOUITOU</span>
+    <ul>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#e5">Épreuve E5</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Présentation -->
+  <section id="accueil">
+    <h1>Terry TOUITOU</h1>
+    <p class="sous-titre">Étudiant BTS SIO option SLAM — 2ème année</p>
+    <p>
+      Ce portfolio présente mes compétences, mes projets réalisés et mon parcours en entreprise
+      dans le cadre de l'épreuve E5 (Support et mise à disposition de services informatiques — Volet A).
+    </p>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="tags">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">PHP</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">XAMPP</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">phpMyAdmin</span>
+      <span class="tag">Git</span>
+      <span class="tag">VS Code</span>
+      <span class="tag">SQL</span>
     </div>
-    <div class="home-content">
-        <h1>Bonjour je suis <span>Terry</span></h1>
-        <h3>je suis une <span>Dévelopeuse</span></h3>
-        <p>blablalbaljqwhjgjzqoihufjomlqhaoiqjns qvzeuhihqlhgqzhqlsjvhhubsnjihbjdicuhqjxicuhcxjicuhdjiuhdji</p>
-        <a href="#" class="btn">Hire me</a>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets">
+    <h2>Projets réalisés</h2>
+
+    <div class="projet">
+      <h3>QuizMaster — Application de quiz</h3>
+      <p>
+        Application web de quiz interactif. Les questions sont stockées dans une base de données MySQL
+        et tirées aléatoirement à chaque partie. L'interface affiche la question, les choix de réponse
+        et le score en fin de partie. Le projet est hébergé en local via XAMPP.
+      </p>
+      <p class="projet-tech">Technologies : HTML · CSS · PHP · MySQL · XAMPP</p>
     </div>
-</section>
+
+    <div class="projet">
+      <h3>ChatRoom — Messagerie commune</h3>
+      <p>
+        Application de chat partagé entre utilisateurs inscrits. Chaque message s'affiche avec le pseudo
+        de l'expéditeur dans une boîte de dialogue commune. Les utilisateurs se connectent avec leur
+        compte pour accéder au fil de discussion.
+      </p>
+      <p class="projet-tech">Technologies : HTML · CSS · PHP · MySQL · XAMPP</p>
+    </div>
+  </section>
+
+  <!-- Épreuve E5 -->
+  <section id="e5">
+    <h2>Épreuve E5 — Volet A</h2>
+    <p class="sous-titre">Support et mise à disposition de services informatiques</p>
+
+    <p><strong>Entreprise :</strong> [Nom de l'entreprise] — [Dates du stage / alternance]</p>
+    <br>
+
+    <h3>Situations professionnelles</h3>
+    <div>
+      <div class="situation">
+        <span class="sit-num">S1</span>
+        <div>
+          <strong>Développement de l'application Quiz</strong>
+          <p class="sit-desc">Conception et développement d'un quiz web avec tirage aléatoire de questions depuis une BDD MySQL via PHP et XAMPP.</p>
+        </div>
+      </div>
+
+      <div class="situation">
+        <span class="sit-num">S2</span>
+        <div>
+          <strong>Développement du chat communautaire</strong>
+          <p class="sit-desc">Création d'une messagerie partagée avec gestion des comptes utilisateurs, affichage du pseudo et des messages.</p>
+        </div>
+      </div>
+
+      <div class="situation">
+        <span class="sit-num">S3</span>
+        <div>
+          <strong>Installation et configuration de XAMPP</strong>
+          <p class="sit-desc">Mise en place d'un serveur local Apache/MySQL pour héberger et tester les applications web développées.</p>
+        </div>
+      </div>
+
+      <div class="situation">
+        <span class="sit-num">S4</span>
+        <div>
+          <strong>Conception des bases de données</strong>
+          <p class="sit-desc">Modélisation et création des tables MySQL pour les deux projets (questions/réponses, utilisateurs/messages) via phpMyAdmin.</p>
+        </div>
+      </div>
+
+      <div class="situation">
+        <span class="sit-num">S5</span>
+        <div>
+          <strong>Tests et documentation technique</strong>
+          <p class="sit-desc">Rédaction de la documentation, tests fonctionnels et support utilisateur des applications développées.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="about">
+    <h2>À propos</h2>
+    <table class="info-table">
+      <tr>
+        <td>Nom</td>
+        <td>Terry TOUITOU</td>
+      </tr>
+      <tr>
+        <td>Formation</td>
+        <td>BTS SIO option SLAM — 2ème année</td>
+      </tr>
+      <tr>
+        <td>Établissement</td>
+        <td>[Nom de l'établissement]</td>
+      </tr>
+      <tr>
+        <td>Localisation</td>
+        <td>Paris, France</td>
+      </tr>
+      <tr>
+        <td>Disponibilité</td>
+        <td>À partir de juillet 2026</td>
+      </tr>
+      <tr>
+        <td>Langues</td>
+        <td>Français, Anglais</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>📧 <a href="mailto:terry.touitou@email.com">terry.touitou@email.com</a></li>
+      <li>💼 <a href="https://linkedin.com/in/terry-touitou" target="_blank">LinkedIn</a></li>
+      <li>🐙 <a href="https://github.com/terrytouitou" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Terry TOUITOU — Portfolio BTS SIO SLAM — Épreuve E5 © 2026</p>
+  </footer>
+
 </body>
+</html>
 </html>
